@@ -9,7 +9,7 @@
 import UIKit
 
 
-class page2: UIViewController {
+class page2: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var gameStatus: UILabel!
     @IBOutlet weak var playAgain: UIButton!
@@ -17,10 +17,12 @@ class page2: UIViewController {
     @IBOutlet weak var enterLetter: UITextField!
     @IBOutlet weak var enterBut: UIButton!
     @IBAction func letterEnt(_ sender: UIButton) {
+        view.endEditing(true)
         gameStatus.isHidden = true
         if enterLetter.text == "" {
             gameStatus.isHidden = false
             gameStatus.text = "Please enter a letter or word"
+            enterLetter.text = ""
             return
         }
         var ch: Character = (enterLetter.text?.characters.first)!
@@ -68,19 +70,22 @@ class page2: UIViewController {
                     enterBut.isEnabled = false
                 }
             }
+            enterLetter.text = ""
             return
         } else if !isLetter(ch: ch){
             gameStatus.isHidden = false
             gameStatus.text = "Please enter a letter or word"
+            enterLetter.text = ""
             return
         }
         ch = toLower(ch: ch)
         if guessedChars.contains(ch) {
             gameStatus.isHidden = false
             gameStatus.text = "You've already guessed this letter"
+            enterLetter.text = ""
             return
         }else if word.characters.contains(ch) {
-            guessedChars.insert(ch, at: 0)
+            guessedChars.append(ch)
             formattedWord.text = formatWord(input: word)
             if formattedWord.text == word{
                 formattedWord.textColor = UIColor.green
@@ -91,10 +96,12 @@ class page2: UIViewController {
                 instr.isHidden = true
                 enterLetter.isHidden = true
                 enterBut.isHidden = true
-                enterBut.isEnabled = false            }
+                enterBut.isEnabled = false
+            }
+            enterLetter.text = ""
             return
         } else {
-            guessedChars.insert(ch, at: 0)
+            guessedChars.append(ch)
             strikes += 1
             hanger.image = UIImage(named: "hangman\(strikes)")
             if strikes == movesAllowed{
@@ -109,8 +116,14 @@ class page2: UIViewController {
                 enterBut.isHidden = true
                 enterBut.isEnabled = false
             }
+            enterLetter.text = ""
             return
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     func toLower(ch:Character)->Character{
@@ -152,10 +165,20 @@ class page2: UIViewController {
     var strikes = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        enterLetter.delegate = self
         gameStatus.isHidden = true
         playAgain.isHidden = true
         playAgain.isEnabled = false
         formattedWord.text = formatWord(input: word)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector (keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
     
@@ -185,14 +208,25 @@ class page2: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func keyboardWillShow(notify: NSNotification){
+        if let size = (notify.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue{
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= size.height
+            }
+        }
     }
-    */
+    
+    func keyboardWillHide(notify: NSNotification){
+        if let size = (notify.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue{
+            if self.view.frame.origin.y != 0 {
+                self.view.frame.origin.y += size.height
+            }
+        }
+    }
+    
+    func dismissKeyboard(){
+        view.endEditing(true)
+    }
+
 
 }

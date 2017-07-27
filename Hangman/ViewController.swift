@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var startButton: UIButton!
     @IBAction func startGame(_ sender: UIButton) {
@@ -49,6 +49,10 @@ class ViewController: UIViewController {
         }
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
    
     func toLower(ch:Character)->Character{
         var output: Character = " "
@@ -87,15 +91,40 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         warningLabel.isHidden = true
+        enterWord.delegate = self
         
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        
+        
+        NotificationCenter.default.addObserver(self, selector: #selector (keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+
     }
     
     
     
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func keyboardWillShow(notify: NSNotification){
+        if let size = (notify.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue{
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= size.height
+            }
+        }
+    }
+    
+    func keyboardWillHide(notify: NSNotification){
+        if let size = (notify.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue{
+            if self.view.frame.origin.y != 0 {
+                self.view.frame.origin.y += size.height
+            }
+        }
+    }
+    
+    func dismissKeyboard(){
+        view.endEditing(true)
     }
 
 
