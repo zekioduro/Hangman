@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hangman/page2.swift"
+            timestampString = "520381305.275219"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "page2"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.page2.__deallocating_deinit"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zekioduro/Desktop/AppDev/Hangman/Hangman/page2.swift"
+                  timestampString = "520381681.673369"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.page2.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Hangman.page2"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zekioduro/Desktop/AppDev/Hangman/Hangman/page2.swift"
+                  timestampString = "520381681.67607"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.page2.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Hangman.page2"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zekioduro/Desktop/AppDev/Hangman/Hangman/page2.swift"
+                  timestampString = "520381681.679131"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.page2.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Hangman.page2&gt;"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zekioduro/Desktop/AppDev/Hangman/Hangman/page2.swift"
+                  timestampString = "520381681.682426"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.page2.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Hangman.page2&gt;"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zekioduro/Desktop/AppDev/Hangman/Hangman/page2.swift"
+                  timestampString = "520381681.684888"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hangman/page2.swift"
+            timestampString = "522873681.65056"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "toLower(ch:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.page2.guessedChars.getter : Swift.Array&lt;Swift.Character&gt;"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zekioduro/Desktop/AppDev/Hangman/Hangman/page2.swift"
+                  timestampString = "520387405.983754"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.page2.guessedChars.setter : Swift.Array&lt;Swift.Character&gt;"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zekioduro/Desktop/AppDev/Hangman/Hangman/page2.swift"
+                  timestampString = "520387405.98908"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.page2.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Hangman.page2"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zekioduro/Desktop/AppDev/Hangman/Hangman/page2.swift"
+                  timestampString = "520387405.992089"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "623">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.page2.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Hangman.page2&gt;"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zekioduro/Desktop/AppDev/Hangman/Hangman/page2.swift"
+                  timestampString = "520387405.994591"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "526">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hangman/page2.swift"
+            timestampString = "522873681.65056"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "toLower(ch:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.page2.word.getter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zekioduro/Desktop/AppDev/Hangman/Hangman/page2.swift"
+                  timestampString = "520387806.844917"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "83">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.page2.word.setter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zekioduro/Desktop/AppDev/Hangman/Hangman/page2.swift"
+                  timestampString = "520387806.848123"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "175">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.page2.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Hangman.page2"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zekioduro/Desktop/AppDev/Hangman/Hangman/page2.swift"
+                  timestampString = "520387806.851177"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "586">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hangman.page2.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Hangman.page2&gt;"
+                  moduleName = "Hangman"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zekioduro/Desktop/AppDev/Hangman/Hangman/page2.swift"
+                  timestampString = "520387806.853813"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "489">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hangman/page2.swift"
+            timestampString = "522873561.424761"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "letterEnt(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hangman/page2.swift"
+            timestampString = "522873681.65056"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hangman/page2.swift"
+            timestampString = "522873681.65056"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "touchesBegan(_:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
